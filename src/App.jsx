@@ -1,33 +1,41 @@
+// App.jsx
+
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+// import PCm from "./components/Profile";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="profile">
+        <div className="description">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+            alt="User avatar"
+            className="avatar"
+          />
+          <p className="name">Petra Marica</p>
+          <p className="tag">@pmarica</p>
+          <p className="location">Salvador, Brasil</p>
+        </div>
+
+        <ul className="stats">
+          <li>
+            <span className="label">Followers</span>
+            <span className="value">1000</span>
+          </li>
+          <li>
+            <span className="label">Views</span>
+            <span className="value">2000</span>
+          </li>
+          <li>
+            <span className="label">Likes</span>
+            <span className="value">3000</span>
+          </li>
+        </ul>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
