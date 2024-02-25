@@ -1,7 +1,10 @@
+import Profile from "./Profile";
 import userData from "./userData.json";
-import { Profile } from "./Profile";
+import css from "./App.module.css";
 
-export const App = () => {
+console.log(css);
+
+function App() {
   return (
     <>
       <Profile
@@ -11,8 +14,8 @@ export const App = () => {
         image={userData[0].avatar}
         stats={userData[0].stats}
       />
-
-      <>{console.log(userData[0].stats)}</>
     </>
   );
-};
+}
+
+export default App;

@@ -1,31 +1,34 @@
 // Profile.jsx
+import css from "./Profile.module.css";
 
-export const Profile = ({ name, tag, location, image, stats }) => {
+const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <>
-      <div>
-        <div>
-          <img src={image} alt="User avatar" />
-          <p>{name}</p>
-          <p>@{tag}</p>
-          <p>{location}</p>
+      <div className={css.container}>
+        <div className={css.profile_container}>
+          <img className={css.profile_img} src={image} alt="User avatar" />
+          <p className={css}>{name}</p>
+          <p className={css}>@{tag}</p>
+          <p className={css}>{location}</p>
         </div>
 
-        <ul>
-          <li>
-            <span>Followers</span>
-            <span>{stats.followers}</span>
+        <ul className={css}>
+          <li className={css}>
+            <span className={css}>Followers</span>
+            <span className={css}>{stats.followers}</span>
           </li>
-          <li>
-            <span>Views</span>
-            <span>{stats.views}</span>
+          <li className={css}>
+            <span className={css}>Views</span>
+            <span className={css}>{stats.views}</span>
           </li>
-          <li>
-            <span>Likes</span>
-            <span>{stats.likes}</span>
+          <li className={css}>
+            <span className={css}>Likes</span>
+            <span className={css}>{stats.likes}</span>
           </li>
         </ul>
       </div>
     </>
   );
 };
+
+export default Profile;
