@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  border: 5px solid black;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 66vi;
+}
+.profileImg {
+  width: 33vi;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.profileName {
+  font-size: 30px;
+}
+.profileTag {
+  font-size: 25px;
+  color: darkgrey;
+}
+.profileLocation {
+  font-size: 25px;
+  color: darkgrey;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 16px;
+}
+ul li:nth-child(2) {
+  border-left: 5px solid darkgrey;
+  border-right: 5px solid darkgrey;
+}
+.item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-top: 5px solid darkgrey;
+  width: 33.333333%; /* 1/3 */
+  padding: 20px;
+  color: black;
+}
+.followersText {
+  font-size: 25px;
+}
+.followersData {
+  font-size: 25px;
+  font-weight: 700;
+}
+.viewsText {
+  font-size: 25px;
+}
+.viewsData {
+  font-size: 25px;
+  font-weight: 700;
+}
+.likesText {
+  font-size: 25px;
+}
+.likesData {
+  font-size: 25px;
+  font-weight: 700;
+}
