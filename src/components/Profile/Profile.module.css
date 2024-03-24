@@ -17,6 +17,7 @@
   width: 33vi;
   border-radius: 50%;
   margin-top: 20px;
+  background-color: darkgrey;
 }
 .profileName {
   font-size: 30px;
