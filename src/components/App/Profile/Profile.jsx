@@ -1,4 +1,4 @@
-// Profile.jsx
+import clsx from "clsx";
 import css from "./Profile.module.css";
 
 const Profile = ({ name, tag, location, image, stats }) => {
@@ -17,7 +17,7 @@ const Profile = ({ name, tag, location, image, stats }) => {
             <span className={css.followersText}>Followers</span>
             <span className={css.followersData}>{stats.followers}</span>
           </li>
-          <li className={css.item}>
+          <li className={clsx(css.item, css.secondLi)}>
             <span className={css.viewsText}>Views</span>
             <span className={css.viewsData}>{stats.views}</span>
           </li>
