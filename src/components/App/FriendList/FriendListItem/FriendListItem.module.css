@@ -1,0 +1,17 @@
+.item {
+  border: 5px solid black;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 20%;
+}
+.online {
+  color: green;
+  font-size: 15px;
+}
+.offline {
+  color: red;
+  font-size: 15px;
+}
+.img {
+}
